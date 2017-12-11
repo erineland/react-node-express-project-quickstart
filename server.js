@@ -7,7 +7,6 @@ var bodyParser = require('body-parser');
 var methodOverride = require('method-override');
 var mongoose = require('mongoose');
 var http = require('http');
-var Book = require('./app/models/book');
 var _ = require('underscore');
 
 // configuration ===========================================
@@ -39,11 +38,11 @@ app.use(bodyParser.urlencoded({
 // override with the X-HTTP-Method-Override header in the request. simulate DELETE/PUT
 app.use(methodOverride('X-HTTP-Method-Override'));
 
-// set the static files location /public/img will be /img for users
-app.use(express.static(__dirname + '/public'));
+// set the static files location e.g. /public/img will be /img for users
+app.use(express.static(__dirname)); //exposes index.html
 
 // routes ==================================================
-require('./app/routes')(app); // configure our routes
+require('./server/routes')(app); // configure our routes
 
 // start app ===============================================
 // startup our app at http://localhost:8080
