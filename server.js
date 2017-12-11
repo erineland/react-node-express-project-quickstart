@@ -42,7 +42,7 @@ app.use(methodOverride('X-HTTP-Method-Override'));
 app.use(express.static(__dirname)); //exposes index.html
 
 // routes ==================================================
-require('./server/routes')(app); // configure our routes
+require('./src/server/routes')(app); // configure our routes
 
 // start app ===============================================
 // startup our app at http://localhost:8080
