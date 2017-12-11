@@ -1,0 +1,7 @@
+bower_comppnents
+.sass-cache
+npm-debug.log
+##don't ignore node_modules if uploading to cloud hosting service
+##don't ignore build/bundle.js if uploading to cloud hosting service
+build/bundle.js
+node_modules
