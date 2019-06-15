@@ -5,24 +5,24 @@ var express = require('express');
 var app = express();
 var bodyParser = require('body-parser');
 var methodOverride = require('method-override');
-var mongoose = require('mongoose');
+// var mongoose = require('mongoose');
 var http = require('http');
 var _ = require('underscore');
 
 // configuration ===========================================
 
 // config files
-var db = require('./config/db');
+// var db = require('./config/db');
 
 // set our port
 var port = process.env.PORT || 3000;
 
-// connect to our mongoDB database 
+// connect to our mongoDB database
 // (uncomment after you enter in your own credentials in config/db.js)
-mongoose.connect(db.url);
+// mongoose.connect(db.url);
 
 // get all data/stuff of the body (POST) parameters
-// parse application/json 
+// parse application/json
 app.use(bodyParser.json());
 
 // parse application/vnd.api+json as json
@@ -48,8 +48,8 @@ require('./src/server/routes')(app); // configure our routes
 // startup our app at http://localhost:8080
 app.listen(port);
 
-// shoutout to the user                     
+// shoutout to the user
 console.log('Magic happens on port ' + port);
 
-// expose app           
+// expose app
 exports = module.exports = app;
