@@ -1,7 +1,14 @@
 import React, { Component } from 'react';
+import { BrowserRouter as Router, Route } from "react-router-dom";
 
-export default class App extends Component {
-  render() {
-    return <h1 data-testid="app-title">Hello World</h1>;
-  }
+const HelloWorld = () => <h1 data-testid="app-title">Hello World</h1>;
+
+const App = () => {
+  return (
+    <Router>
+      <Route exact path="/" component={HelloWorld} />
+    </Router>
+  )
 }
+
+export default App;
