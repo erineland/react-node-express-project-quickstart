@@ -1,5 +1,22 @@
+$mq-breakpoints: (
+    mobile:  320px,
+    tablet:  740px,
+    desktop: 980px,
+    wide:    1300px
+);
+
+@import 'mq';
+
 body {
     background: #ACCEEC;
     color: #005CC5;
     text-align: center;
+
+    @include mq(mobile, tablet) {
+        background: red;
+    }
+
+    @include mq(tablet, desktop) {
+        background: purple;
+    }
 }
