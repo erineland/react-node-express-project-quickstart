@@ -15,7 +15,7 @@ const App = () => {
 }
 
 App.propTypes = {
-  axiosInstance: PropTypes.object,
+  axiosInstance: PropTypes.func,
 }
 
 export default App;
