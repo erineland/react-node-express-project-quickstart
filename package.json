@@ -1,14 +1,15 @@
 {
-  "name": "***REMOVED***_***REMOVED***_react_node_recipe_application",
+  "name": "***REMOVED***_***REMOVED***_react_node_express_application",
   "version": "1.0.0",
-  "description": "The application is a food / recipe application that will help users\r become better at cooking.",
-  "main": "index.js",
+  "description": "This application is a React, Node and Express app seed project for creating even cooler projects!",
+  "main": "server.js",
   "scripts": {
     "start": "nodemon ./server.js",
     "webpack": "./node_modules/.bin/webpack",
     "deploy": "npm run webpack; gcloud app deploy",
     "webpack:watch": "./node_modules/.bin/webpack -w",
-    "test": "test"
+    "test": "jest",
+    "test:watch": "jest --watch"
   },
   "jest": {
     "setupFilesAfterEnv": [
