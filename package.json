@@ -10,6 +10,11 @@
     "webpack:watch": "./node_modules/.bin/webpack -w",
     "test": "test"
   },
+  "jest": {
+    "setupFilesAfterEnv": [
+      "./setupTests.js"
+    ]
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -28,9 +33,11 @@
     "@babel/preset-env": "^7.0.0",
     "@babel/preset-react": "^7.0.0",
     "babel-core": "^7.0.0-bridge.0",
-    "babel-jest": "^23.4.2",
+    "babel-jest": "^24.8.0",
     "babel-loader": "^8.0.0",
     "css-loader": "^3.0.0",
+    "enzyme": "^3.10.0",
+    "enzyme-adapter-react-16": "^1.14.0",
     "jest": "^24.8.0",
     "node-sass": "^4.7.2",
     "react-test-renderer": "^16.8.6",
