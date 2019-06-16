@@ -2,6 +2,11 @@ import React from 'react';
 import App from '../../../src/client/components/app';
 import renderer from 'react-test-renderer';
 import { mount } from 'enzyme';
+import path from 'path';
+import fs from 'fs';
+
+// const pathName = path.resolve(__dirname, `../../__mocks__/validCardResults.json`);
+// const mockCards = fs.readFileSync(pathName, 'utf8');
 
 describe('App', () => {
     const render = customProps => {
