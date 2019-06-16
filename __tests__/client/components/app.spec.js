@@ -1,5 +1,5 @@
 import React from 'react';
-import App from '../../src/client/components/App';
+import App from '../../../src/client/components/App';
 import renderer from 'react-test-renderer';
 import { mount } from 'enzyme';
 
