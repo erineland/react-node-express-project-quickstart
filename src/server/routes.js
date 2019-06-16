@@ -79,7 +79,7 @@
              key: book_id
          }, function (err, book) {
 
-             // if there is an error retrieving, send the error. 
+             // if there is an error retrieving, send the error.
              // nothing after res.send(err) will execute
              if (err)
                  res.send(err);
@@ -100,7 +100,7 @@
              title: title
          }, function (err, book) {
 
-             // if there is an error retrieving, send the error. 
+             // if there is an error retrieving, send the error.
              // nothing after res.send(err) will execute
              if (err)
                  res.send(err);
@@ -114,27 +114,7 @@
 
      // frontend routes =========================================================
      // route to handle all angular requests
-     app.get('*', function (req, res) {
-         res.sendfile('./public/views/index.html'); // load our public/index.html file
-     });
-
-     app.get('/js/controllers/MainCtrl.js', function(req, res) {
-        res.sendfile('./public/js/controllers/MainCtrl.js');
-     })
-
-     app.get('/js/services/BookService.js', function(req, res) {
-        res.sendfile('./public/js/services/BookService.js');
-     })
-
-     app.get('/js/appRoutes.js', function(req, res) {
-        res.sendfile('./public/js/appRoutes.js');
-     })
-
-     app.get('/js/app.js', function(req, res) {
-        res.sendfile('./public/js/app.js');
-     })
-
-     app.get('/css/style.css', function(req, res) {
-        res.sendfile('./public/css/style.css');
-     })
+    //  app.get('/js/controllers/MainCtrl.js', function(req, res) {
+    //     res.sendfile('./public/js/controllers/MainCtrl.js');
+    //  })
  };
