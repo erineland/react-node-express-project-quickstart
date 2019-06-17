@@ -40,6 +40,7 @@ app.use(methodOverride('X-HTTP-Method-Override'));
 
 // set the static files location e.g. /public/img will be /img for users
 app.use(express.static(__dirname)); //exposes index.html
+// ANY REACT ROUTER ROUTES MUST ALSO BE EXPOSED HERE TO RETURN express.static(__dirname) !!!
 
 // routes ==================================================
 require('./src/server/routes')(app); // configure our routes
