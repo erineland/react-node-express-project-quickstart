@@ -45,6 +45,8 @@
     "css-loader": "^3.0.0",
     "enzyme": "^3.10.0",
     "enzyme-adapter-react-16": "^1.14.0",
+    "eslint": "^5.16.0",
+    "eslint-plugin-react": "^7.13.0",
     "jest": "^24.8.0",
     "node-sass": "^4.7.2",
     "react-test-renderer": "^16.8.6",
