@@ -4,8 +4,8 @@
   "description": "This application is a React, Node and Express app seed project for creating even cooler projects!",
   "main": "server.js",
   "scripts": {
-    "start": "nodemon ./server.js",
     "webpack": "./node_modules/.bin/webpack",
+    "start": "npm run webpack; nodemon ./server.js",
     "deploy": "npm run webpack; gcloud app deploy",
     "webpack:watch": "./node_modules/.bin/webpack -w",
     "test": "jest; exit 0",
