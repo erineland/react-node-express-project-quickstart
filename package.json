@@ -1,5 +1,5 @@
 {
-  "name": "***REMOVED***_***REMOVED***_react_node_express_application",
+  "name": "react_node_express_application",
   "version": "1.0.0",
   "description": "This application is a React, Node and Express app seed project for creating even cooler projects!",
   "main": "server.js",
